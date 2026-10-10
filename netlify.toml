@@ -1,0 +1,11 @@
+# Static site, no build step.
+[build]
+  publish = "."
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    # frame-ancestors lets emevidence.org show the tool in its in-page viewer
+    Content-Security-Policy = "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; base-uri 'self'; form-action 'none'; object-src 'none'; frame-ancestors 'self' https://emevidence.org https://www.emevidence.org"

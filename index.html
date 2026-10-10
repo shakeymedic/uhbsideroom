@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ED Side-Room Prioritisation (preliminary)</title>
+<meta name="description" content="Preliminary draft aide-memoire for prioritising ED side rooms when rooms run out. UHB emergency departments. Draft v5, Oct 2026, for IPC review, not yet Trust-approved.">
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="draft-banner" role="note">
+  <strong>PRELIMINARY DRAFT</strong> · v5 · Oct 2026 · For IPC review · <strong>Not yet Trust-approved</strong> · Clinical judgement and IPC advice override this tool
+</div>
+
+<header class="site-header">
+  <div class="site-title"><img class="site-logo" src="emevidence-logo.png" alt="EM Evidence logo" width="48" height="48">
+  <h1>ED side-room prioritisation</h1>
+  </div>
+  <p class="sub">All UHB emergency departments · Who gets the side room first when rooms run out · Based on NIPCM (England) and Appendix 11 v1.1 (Mar 2026)</p>
+</header>
+
+<nav class="tabs" role="tablist" aria-label="Sections">
+  <button role="tab" id="tab-ladder" aria-controls="ladder" aria-selected="true">Priorities</button>
+  <button role="tab" id="tab-two" aria-controls="two" aria-selected="false" tabindex="-1">Two patients, one room</button>
+  <button role="tab" id="tab-thresholds" aria-controls="thresholds" aria-selected="false" tabindex="-1">How suspicious?</button>
+  <button role="tab" id="tab-deisolate" aria-controls="deisolate" aria-selected="false" tabindex="-1">De-isolate &amp; clean</button>
+  <button role="tab" id="tab-nhs" aria-controls="nhs" aria-selected="false" tabindex="-1">NHS tool</button>
+  <button role="tab" id="tab-evidence" aria-controls="evidence" aria-selected="false" tabindex="-1">Evidence &amp; sources</button>
+</nav>
+
+<main>
+
+<!-- ============ PRIORITIES ============ -->
+<section id="ladder" role="tabpanel" aria-labelledby="tab-ladder">
+
+  <div class="key-boxes">
+    <div class="key-box key-box--warn">
+      <h2>No negative-pressure rooms in our EDs</h2>
+      <p>Airborne: single room, door shut, patient masked, staff FFP3.</p>
+    </div>
+    <div class="key-box">
+      <h2>Care before rooms</h2>
+      <p>Never delay resuscitation or hide a deteriorating patient.</p>
+    </div>
+    <div class="key-box">
+      <h2>Isolate on suspicion</h2>
+      <p>Don't wait for results. Mask anyone with respiratory symptoms.</p>
+    </div>
+  </div>
+
+  <p class="hint">Tap a priority for the full lists, room, PPE and notes.</p>
+
+  <!-- Priority 1 -->
+  <details class="prio prio-1">
+    <summary>
+      <span class="prio-num">1</span>
+      <span class="prio-head"><span class="prio-title">Suspected HCID</span><span class="prio-action">STOP. Not covered by this sheet.</span></span>
+      <ul class="prio-points">
+        <li><b>VHF, MERS, avian flu, novel pathogen</b> + travel or exposure</li>
+        <li>Nearest single room, door shut, minimal staff</li>
+        <li>Trust HCID pathway: <b>call on-call infection consultant and UKHSA HPT now</b></li>
+      </ul>
+    </summary>
+    <div class="prio-detail">
+      <div>
+        <h3>Who</h3>
+        <p>VHF, MERS, avian influenza, novel pathogen: compatible illness plus travel or exposure.</p>
+      </div>
+      <div>
+        <h3>Room, PPE and notes</h3>
+        <p>Nearest single room, door shut, fewest staff. Do not use this sheet or the NHS tool. Trust HCID pathway (Identify · Isolate · Inform): on-call infection consultant and UKHSA HPT. Clade I mpox is no longer an HCID (ACDP, Mar 2025).</p>
+      </div>
+    </div>
+  </details>
+
+  <!-- Priority 2 -->
+  <details class="prio prio-2">
+    <summary>
+      <span class="prio-num">2</span>
+      <span class="prio-head"><span class="prio-title">Airborne</span><span class="prio-action">Single room, door shut, patient masked, staff FFP3. Call IPC.</span></span>
+      <ul class="prio-points">
+        <li><b>Measles</b>: fever + rash; exposure, travel or non-immune</li>
+        <li><b>Chickenpox</b>, disseminated or immunocompromised zoster, unexplained vesicular rash</li>
+        <li><b>Probable pulmonary TB</b>: cough &gt;2–3 wk, weight loss, night sweats, abnormal CXR, risk factors</li>
+        <li><b>Possible MDR-TB</b>: escalate to micro/ID for transfer (needs negative pressure)</li>
+        <li>Mpox with respiratory symptoms or severe disease</li>
+      </ul>
+    </summary>
+    <div class="prio-detail">
+      <div>
+        <h3>Who</h3>
+        <ul>
+          <li><b>Measles:</b> fever + rash, coryza or conjunctivitis; exposure, travel or non-immune</li>
+          <li><b>Chickenpox</b> · disseminated or immunocompromised zoster · any unexplained vesicular rash until excluded</li>
+          <li><b>Probable pulmonary or laryngeal TB:</b> cough &gt;2–3 wk, haemoptysis, night sweats, weight loss, abnormal CXR, migrant/homeless/HIV</li>
+          <li><b>Possible MDR-TB:</b> previous treatment, contact, high-burden country. Highest consequence.</li>
+          <li><b>Mpox</b> with respiratory symptoms, severe disease or extensive lesions</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Room, PPE and notes</h3>
+        <ul>
+          <li>No negative-pressure rooms in UHB EDs: single room, door shut, patient masked (FRSM); call IPC.</li>
+          <li>MDR/XDR-TB needs a negative-pressure room: escalate at once to micro/ID about transfer.</li>
+          <li>Staff: fit-tested FFP3 or hood for measles, chickenpox, TB, respiratory mpox. Disseminated zoster: Appendix 11 lists FRSM, FFP3 for AGPs.</li>
+          <li>Isolate at a low level of suspicion: one missed case exposes the waiting room.</li>
+          <li>Already in a shared area: tell IPC and the HPT (contact tracing, PEP).</li>
+        </ul>
+      </div>
+    </div>
+  </details>
+
+  <!-- Priority 3 -->
+  <details class="prio prio-3">
+    <summary>
+      <span class="prio-num">3</span>
+      <span class="prio-head"><span class="prio-title">Enteric</span><span class="prio-action">Single room with en-suite or own commode. Soap and water, not gel.</span></span>
+      <ul class="prio-points">
+        <li><b>Active vomiting ± diarrhoea</b> (norovirus-like): top of this priority</li>
+        <li><b>C. difficile</b> suspected or confirmed</li>
+        <li>Other infective gastroenteritis</li>
+      </ul>
+    </summary>
+    <div class="prio-detail">
+      <p class="detail-label">Uncontained enteric shedding</p>
+      <div>
+        <h3>Who</h3>
+        <ul>
+          <li><b>Active vomiting ± diarrhoea</b> (norovirus-like): top of this priority. One episode in a bay can close the bay or department.</li>
+          <li><b>C. difficile</b> suspected or confirmed: watery stool, Bristol 6–7, ≥3 in 24 h, recent antibiotics or hospital stay</li>
+          <li><b>Other infective gastroenteritis:</b> Salmonella, STEC/O157, rotavirus, hepatitis A (single en-suite in App 11)</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Room, PPE and notes</h3>
+        <ul>
+          <li>Single room with en-suite or dedicated commode.</li>
+          <li>Isolate at symptom onset, not when the result returns.</li>
+          <li>Contact precautions. Soap and water for hands, not gel.</li>
+          <li>FRSM if vomiting; no other RPE.</li>
+          <li>Where possible keep en-suite rooms for enteric cases.</li>
+        </ul>
+      </div>
+    </div>
+  </details>
+
+  <!-- Priority 4 -->
+  <details class="prio prio-4">
+    <summary>
+      <span class="prio-num">4</span>
+      <span class="prio-head"><span class="prio-title">High-consequence droplet / contact</span><span class="prio-action">Single room strongly preferred.</span></span>
+      <ul class="prio-points">
+        <li><b>Meningococcal disease, invasive group A strep</b>: until established on antibiotics</li>
+        <li><b>Pertussis, diphtheria</b></li>
+        <li><b>CPE</b> known or high risk (higher if incontinent or wounds) · Candida auris* · crusted scabies</li>
+        <li>Mpox without respiratory symptoms · PVL S. aureus</li>
+      </ul>
+    </summary>
+    <div class="prio-detail">
+      <div>
+        <h3>Who</h3>
+        <ul>
+          <li><b>Meningococcal disease</b> (or meningitis of unknown cause / septicaemia) and <b>invasive group A strep</b></li>
+          <li><b>Pertussis · diphtheria</b> (risk to infants and unvaccinated contacts)</li>
+          <li><b>CPE</b> known or high risk. Top of this priority if incontinent, with wounds or uncontrolled secretions.</li>
+          <li><b>Candida auris</b>‡ · <b>crusted scabies</b>†</li>
+          <li><b>Mpox</b> without respiratory symptoms, severe disease or extensive lesions</li>
+          <li><b>PVL S. aureus</b> (single en-suite)</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Room, PPE and notes</h3>
+        <ul>
+          <li>Single room strongly preferred; en-suite for contact organisms.</li>
+          <li>Bacterial infections: until established on appropriate antimicrobials. Reviews use ~24 h; App 11 gives no hour count, so follow local policy.</li>
+          <li>CPE: single en-suite in App 11.</li>
+          <li>C. auris ranks alongside CPE in the reviews, but App 11 asks for a room only in high-risk settings (ICU, oncology/haematology).</li>
+          <li>Droplet: FRSM within 1 m; FFP3/hood for AGPs. Contact (CPE, C. auris): gloves/apron per risk assessment, no RPE.</li>
+        </ul>
+      </div>
+    </div>
+  </details>
+
+  <!-- Priority 5 -->
+  <details class="prio prio-5">
+    <summary>
+      <span class="prio-num">5</span>
+      <span class="prio-head"><span class="prio-title">Respiratory viruses</span><span class="prio-action">Room if free; otherwise cohort same confirmed virus, ≥1 m apart.</span></span>
+      <ul class="prio-points">
+        <li><b>Influenza, COVID-19, RSV</b>: rapid test early, then cohort</li>
+        <li><b>Move up</b> if AGP (NIV, high-flow), uncontrolled cough or can't mask</li>
+        <li>Other droplet infections (mumps, rubella, adenovirus, Mycoplasma etc.)</li>
+      </ul>
+    </summary>
+    <div class="prio-detail">
+      <p class="detail-label">Common respiratory viruses etc.</p>
+      <div>
+        <h3>Who</h3>
+        <ul>
+          <li><b>Influenza, COVID-19, RSV</b></li>
+          <li><b>Other droplet infections</b>‡ (single en-suite in App 11): mumps, rubella, adenovirus, parainfluenza, Mycoplasma, EV-D68, pneumococcal/Hib pneumonia (until on antimicrobials), parvovirus B19 (only before the rash)</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Room, PPE and notes</h3>
+        <ul>
+          <li>Single room if free; otherwise cohort by confirmed pathogen: ≥1 m apart, door or bay closed, FRSM on patients.</li>
+          <li>Rapid PCR/POCT early. Untested: a spare room while waiting, then move on the result.</li>
+          <li>Move up to a single room if AGP (NIV, high-flow O₂), uncontrolled cough, or cannot mask or comply (delirium, dementia, young child).</li>
+          <li>Never cohort unconfirmed or different infections, immunosuppressed patients, or patients unlikely to comply. Mixed cohorts only under a Board-assured preparedness plan.</li>
+        </ul>
+      </div>
+    </div>
+  </details>
+
+  <!-- Priority 6 -->
+  <details class="prio prio-6">
+    <summary>
+      <span class="prio-num">6</span>
+      <span class="prio-head"><span class="prio-title">Lowest</span><span class="prio-action">Bay acceptable once rooms run out. Discuss with IPC.</span></span>
+      <ul class="prio-points">
+        <li><b>MRSA, ESBL, VRE carriage</b>: continent, no wounds, no shedding</li>
+        <li>Localised covered shingles · extrapulmonary TB (pulmonary excluded)</li>
+        <li>Not infectious: known IBD flare, laxatives, psoriasis; chronic dry cough, no TB risk, normal CXR</li>
+      </ul>
+    </summary>
+    <div class="prio-detail">
+      <p class="detail-label">Lowest (bay acceptable)</p>
+      <div>
+        <h3>Who</h3>
+        <ul>
+          <li><b>MRSA, ESBL, VRE carriage</b>‡: continent, no wound, diarrhoea or respiratory shedding. (One review would add continent CPE carriers; App 11 says single en-suite: follow local IPC.)</li>
+          <li>Localised, covered shingles (immunocompetent)</li>
+          <li>Extrapulmonary TB with pulmonary disease excluded and no draining lesion</li>
+          <li>Pseudomonas, Acinetobacter, Serratia, Stenotrophomonas, Pneumocystis, B. cereus: room only in high-risk settings (ICU, oncology/haematology) per App 11</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Room, PPE and notes</h3>
+        <ul>
+          <li>Bay with standard ± contact precautions once rooms are exhausted.</li>
+          <li>This is rationing, not a claim that no room is needed. Discuss with IPC.</li>
+          <li><b>Not a reason for a room:</b> diarrhoea or rash with a known non-infectious cause (IBD flare, laxatives, IBS, psoriasis); chronic dry cough with no TB risk features and a normal CXR (mask, main ED).</li>
+        </ul>
+      </div>
+    </div>
+  </details>
+
+  <!-- Protective -->
+  <details class="prio prio-p">
+    <summary>
+      <span class="prio-num">P</span>
+      <span class="prio-head"><span class="prio-title">Protective</span><span class="prio-action">Parallel to the ladder, not last.</span></span>
+      <ul class="prio-points">
+        <li><b>Neutropenia</b> (&lt;0.5 × 10⁹/L), transplant, severe immunosuppression</li>
+        <li>Agree with senior and haemato-oncology. Never next to infectious patients.</li>
+      </ul>
+    </summary>
+    <div class="prio-detail">
+      <p class="detail-label">Protective (parallel)</p>
+      <div>
+        <h3>Who</h3>
+        <p>Neutropenia (&lt;0.5 × 10⁹/L), post-transplant, severe immunosuppression.</p>
+      </div>
+      <div>
+        <h3>Room, PPE and notes</h3>
+        <p>Single room, door shut, apart from infectious patients. The room protects them from the department, so do not rank them last by default. Agree with the senior and haemato-oncology. Never bay with infectious patients or cohort with a different infection.</p>
+      </div>
+    </div>
+  </details>
+
+  <p class="footnote">* Appendix 11 asks for a room for C. auris only in high-risk settings; see the full detail under priority 4.<br>† reviews only, not in App 11 · ‡ placed by analogy (App 11 gives room type, no rank)</p>
+
+  <section class="panel">
+    <h2>No side room available? Bridge the gap</h2>
+    <ul class="two-col">
+      <li><b>Mask the patient</b> (FRSM) if tolerated. Not always appropriate on oxygen, if distressed, or in some paediatric and mental health settings.</li>
+      <li><b>Out of the waiting room:</b> ≥1 m from others, best-ventilated, most remote space. Assess infectious patients first.</li>
+      <li><b>Airborne suspect:</b> masked, separate, well-ventilated space; tell IPC now.</li>
+      <li><b>Vomiting or diarrhoea:</b> own cubicle and commode, contact precautions; expect to close the area for cleaning afterwards.</li>
+      <li>Dedicated equipment, hand hygiene, door closed wherever there is one.</li>
+      <li><b>Cohort</b> only ≥2 patients with the same confirmed infection, unless the Board-assured winter plan says otherwise.</li>
+    </ul>
+  </section>
+
+  <p class="callout">A room is not free until it has been cleaned.</p>
+
+  <section class="panel">
+    <h2>Triage screen</h2>
+    <p>Fever + rash · vomiting/diarrhoea · cough + TB risk · travel · previous MDRO/CPE · hospital stay abroad. Mask anyone with respiratory symptoms. Isolate on suspicion, not on the result.</p>
+  </section>
+</section>
+
+<!-- ============ TWO PATIENTS ============ -->
+<section id="two" role="tabpanel" aria-labelledby="tab-two" hidden>
+  <h2>Two patients both need the last side room</h2>
+  <p>Apply in order. Both patients keep the precautions their infection needs.</p>
+  <ol class="rules">
+    <li><b>Clinical safety first.</b> Resuscitation and visibility come before isolation. Isolated patients get less contact and more supportive-care failures.</li>
+    <li><b>Match the room to the need.</b> Airborne suspects need a closed door away from the waiting area. Enteric cases gain most from an en-suite. Two rooms, one en-suite: the en-suite goes to the enteric case.</li>
+    <li><b>Higher priority is allocated the room.</b> 2 before 3, 3 before 4, and so on. Priority 1 (HCID) follows its own pathway.</li>
+    <li><b>Same priority: likelihood × consequence.</b> Likely MDR-TB before probable drug-sensitive TB. Vomiting or incontinent norovirus before continent C. difficile.</li>
+    <li><b>Who cannot be contained?</b> Uncontrolled cough, incontinence, draining wound, AGP, cannot mask, cannot comply.</li>
+    <li><b>Who can be cohorted?</b> Allocate the room to the patient whose infection cannot be cohorted (unconfirmed, no matching bay). PCR-confirmed flu can go to the flu bay.</li>
+    <li><b>Who leaves the room soonest?</b> If one patient's rapid test is due within the hour, keep them masked and apart until the result.</li>
+    <li><b>Plan for the patient remaining in the main department.</b> Oncology, transplant, pregnant, neonatal or unvaccinated children nearby lower the threshold to isolate. Plan their space, precautions and neighbours.</li>
+    <li><b>Free a room.</b> Review current occupants: de-isolate anyone cleared, resolved, non-infectious or Priority 6; move patients waiting for beds to wards.</li>
+    <li><b>Document and escalate.</b> Record the decision and review date in the notes and handover. Escalate to the site manager and IPC/microbiology. Incident report if a Priority 2 patient cannot be isolated.</li>
+  </ol>
+</section>
+
+<!-- ============ THRESHOLDS ============ -->
+<section id="thresholds" role="tabpanel" aria-labelledby="tab-thresholds" hidden>
+  <h2>How suspicious is enough?</h2>
+  <p>Pre-test probability thresholds.</p>
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th scope="col">Condition</th><th scope="col">Room once suspicion reaches about</th></tr></thead>
+    <tbody>
+      <tr><td>Suspected HCID</td><td>Any credible link (HCID pathway)</td></tr>
+      <tr><td>Measles</td><td>1–5%: any compatible illness with exposure, travel or non-immunity</td></tr>
+      <tr><td>Chickenpox / disseminated zoster</td><td>5–10%</td></tr>
+      <tr><td>Possible MDR-TB</td><td>~5%</td></tr>
+      <tr><td>Drug-sensitive pulmonary TB</td><td>10–20%. Below about 1–5% (no risk factors, normal CXR) a room is not justified.</td></tr>
+      <tr><td>Active vomiting / diarrhoea</td><td>~30%, and always if vomiting or incontinent</td></tr>
+      <tr><td>C. difficile</td><td>20–30%</td></tr>
+      <tr><td>CPE</td><td>Known positive: always. Suspected: 5–10%</td></tr>
+      <tr><td>Meningococcal / invasive GAS</td><td>~20% (time-limited)</td></tr>
+      <tr><td>Influenza / COVID-19 / RSV</td><td>~50%, or test first and cohort</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <ul class="notes">
+    <li><b>Basis:</b> two reviews that broadly agree. Expert opinion, not validated. Adjust for how many rooms are free; agree local changes with IPC.</li>
+    <li><b>Expect over-isolation for TB.</b> In one ED study only 25% of patients suspected of pulmonary TB had it, and a third of true cases were missed. About 3 in 4 isolated "TB suspects" being negative is the price of catching the rest.</li>
+    <li>Use a structured TB assessment (risk factors, CXR, rapid NAAT/GeneXpert) so patients leave the room quickly when the answer is no.</li>
+    <li><b>Not adopted:</b> one review isolates only above 70% (10–70% wait in a cubicle for testing). This would leave suspected airborne infection in an open cubicle, and Appendix 11 specifies placement for suspected cases.</li>
+  </ul>
+</section>
+
+<!-- ============ DE-ISOLATE ============ -->
+<section id="deisolate" role="tabpanel" aria-labelledby="tab-deisolate" hidden>
+  <h2>Review, de-isolation and cleaning</h2>
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th scope="col">Situation</th><th scope="col">Action</th></tr></thead>
+    <tbody>
+      <tr><td>All placements</td><td>Review at least daily and whenever a result returns, with IPC input. Write the review and de-isolation date in the notes.</td></tr>
+      <tr><td>Flu / COVID-19 / RSV</td><td>Negative rapid test frees the room within hours. Rapid PCR at the front door where possible.</td></tr>
+      <tr><td>TB</td><td>De-isolation is an IPC/TB-team decision, not an ED one.</td></tr>
+      <tr><td>Norovirus / C. difficile</td><td>Commonly 48 h symptom-free (local policy). Immunocompromised patients may shed for longer.</td></tr>
+      <tr><td>Bacterial droplet (meningococcus, GAS, pneumococcus, pertussis, Hib, diphtheria)</td><td>Until established on appropriate antimicrobials; the clinical team decides dose and duration.</td></tr>
+      <tr><td>After an AGP</td><td>Leave the room empty for the time IPC sets for that room's air changes (often at least 20 min; longer with poor ventilation). NIPCM minimum for ordinary single rooms: 6 air changes/h. Ask estates for true figures.</td></tr>
+      <tr><td><b>Cleaning before reuse</b></td><td>Bag waste and linen in the room. Decontaminate reusable equipment. Clean with 1,000 ppm available chlorine (or combined detergent-disinfectant), top to bottom, least to most contaminated. Extra attention to toilet, commode and touch points. Tell the nurse in charge when ready. <b>The room is not free until it is cleaned.</b></td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h2>Vital numbers and notification</h2>
+  <ul class="notes">
+    <li><b>1 m</b> minimum separation of infectious patients awaiting assessment or cohorted, door closed (NIPCM ch.2).</li>
+    <li><b>FFP3</b> (or hood) must be fit-tested and fit-checked each time; never worn by the patient. Staff without a fit test: hood.</li>
+    <li><b>AGPs</b> on a patient with suspected or confirmed droplet/airborne infection: FFP3 or hood, and a room if possible.</li>
+    <li><b>Notify on suspicion:</b> measles, TB, meningococcal, mumps, rubella, pertussis, diphtheria, mpox, hepatitis A, invasive GAS and others marked "Yes" in App 11. Phone the HPT within 24 h if urgent; written notification within 3 days. Don't wait for the lab.</li>
+    <li>Exposure in a shared area: tell IPC and HPT.</li>
+  </ul>
+</section>
+
+<!-- ============ NHS TOOL ============ -->
+<section id="nhs" role="tabpanel" aria-labelledby="tab-nhs" hidden>
+  <h2>NHS England Isolation Prioritisation Tool (v1.0, Oct 2024)</h2>
+  <ul class="notes">
+    <li>Scores risk = probability × impact for one pathogen in one patient population. It does not rank pathogens and does not decide.</li>
+    <li>"Isolation recommended? Yes/No" is a manual entry, then free text for reasoning, review date and de-isolation date.</li>
+    <li>Meant for a multidisciplinary team (IPC, medical, nursing, operations, facilities). <b>Never for a suspected HCID.</b></li>
+    <li>Use it when two patients at the same priority both need a room, when the organism isn't on the priorities list, or to document a decision.</li>
+  </ul>
+
+  <div class="calc">
+    <h3>Probability <span class="muted">(stop at the first "No")</span></h3>
+    <ol class="prob-qs" id="prob-qs">
+      <li data-no="Very low"><span>Population at risk of further exposure?</span>
+        <span class="yn"><button type="button" data-a="yes">Yes</button><button type="button" data-a="no">No</button></span></li>
+      <li data-no="Low"><span>Susceptible?</span>
+        <span class="yn"><button type="button" data-a="yes">Yes</button><button type="button" data-a="no">No</button></span></li>
+      <li data-no="Moderate"><span>Highly transmissible, environmentally persistent, widely spread or antimicrobial-resistant?</span>
+        <span class="yn"><button type="button" data-a="yes">Yes</button><button type="button" data-a="no">No</button></span></li>
+      <li data-no="High" data-yes="Very high"><span>Transmission likely?</span>
+        <span class="yn"><button type="button" data-a="yes">Yes</button><button type="button" data-a="no">No</button></span></li>
+    </ol>
+    <p class="result-line">Probability: <output id="prob-out">not yet answered</output></p>
+
+    <h3>Impact <span class="muted">(up to 4 questions)</span></h3>
+    <ul class="notes">
+      <li>Severe disease after exposure?</li>
+      <li>Significant number of the wider population susceptible or at risk?</li>
+      <li>Negative effect on current service and future capacity?</li>
+      <li>Effective treatment and controls in place or possible?</li>
+    </ul>
+    <p class="muted small">This sheet does not say how the four impact answers combine into a level, so choose the impact level the team agrees.</p>
+    <label class="select-label">Impact level
+      <select id="impact">
+        <option value="">Choose…</option>
+        <option>Very low</option><option>Low</option><option>Moderate</option><option>High</option><option>Very high</option>
+      </select>
+    </label>
+    <p class="result-line big">Overall risk: <output id="risk-out">answer both parts</output></p>
+    <button type="button" class="reset" id="reset">Reset</button>
+  </div>
+
+  <div class="table-wrap">
+  <table class="matrix" id="matrix">
+    <caption>Risk matrix</caption>
+    <thead><tr><th scope="col">Probability ↓ / Impact →</th><th scope="col">Very low</th><th scope="col">Low</th><th scope="col">Moderate</th><th scope="col">High</th><th scope="col">Very high</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">Very low</th><td>Very low</td><td>Low</td><td>Low</td><td>Moderate</td><td>Moderate</td></tr>
+      <tr><th scope="row">Low</th><td>Low</td><td>Low</td><td>Moderate</td><td>Moderate</td><td>Moderate</td></tr>
+      <tr><th scope="row">Moderate</th><td>Low</td><td>Moderate</td><td>Moderate</td><td>High</td><td>High</td></tr>
+      <tr><th scope="row">High</th><td>Moderate</td><td>Moderate</td><td>High</td><td>High</td><td>Very high</td></tr>
+      <tr><th scope="row">Very high</th><td>Moderate</td><td>High</td><td>High</td><td>Very high</td><td>Very high</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p>Highest overall risk is allocated the room first. Assessment must be ongoing and include de-isolation.</p>
+</section>
+
+<!-- ============ EVIDENCE ============ -->
+<section id="evidence" role="tabpanel" aria-labelledby="tab-evidence" hidden>
+  <h2>Status of this guidance</h2>
+  <p>NIPCM and Appendix 11 give the room type for each infection but no national pathogen-by-pathogen priority order. The NHS England Isolation Prioritisation Tool ranks by risk, not by pathogen. The priorities here are a synthesis of three evidence reviews: consensus, not mandated. Trust IPC policy overrides this sheet; ask IPC or on-call microbiology if unsure.</p>
+
+  <h2>Where the sources disagree</h2>
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th scope="col">Issue</th><th scope="col">Disagreement</th><th scope="col">Position taken here</th></tr></thead>
+    <tbody>
+      <tr><td>National rank</td><td>App 11 gives room type per organism (mostly "single en-suite room"); no numeric rank.</td><td>Priorities reconciled from three reviews. All three put HCID and airborne first.</td></tr>
+      <tr><td>HCID</td><td>One review lists HCIDs in its top tier; the NHS tool must not be used for them.</td><td>Priority 1 with a stop instruction: cannot be overlooked, not ranked against other infections.</td></tr>
+      <tr><td>Norovirus</td><td>One review ranks it with TB and measles; the others just below.</td><td>Heads Priority 3: needs a different kind of room from airborne cases.</td></tr>
+      <tr><td>Continent CPE carriers</td><td>One review accepts a bay under scarcity; App 11 says single en-suite.</td><td>Not adopted. All three accept MRSA/VRE/ESBL carriage in a bay, which departs from App 11 for MRSA. Check local policy.</td></tr>
+      <tr><td>TB threshold</td><td>Two reviews 10–20%; one 70%.</td><td>10–20% (see How suspicious?).</td></tr>
+      <tr><td>De-isolation timing</td><td>One review uses "&gt;48 h of antibiotics" for pneumococcal disease.</td><td>App 11 wording: "established on appropriate antimicrobial treatment"; clinical team decides.</td></tr>
+      <tr><td>Room engineering</td><td>One review quotes US CDC values (12 air changes/h, −2.5 Pa).</td><td>Use NIPCM and Trust estates figures.</td></tr>
+      <tr><td>Scottish v English App 11</td><td>One review cites Scottish App 11 (v4.0, R1/R2/R3). English App 11 (v1.1) uses "negative pressure isolation room/suite" v "single en-suite room".</td><td>English App 11 v1.1 used.</td></tr>
+      <tr><td>Neutropenia</td><td>Ranked last by one review, "conditional" by another.</td><td>Parallel priority: NIPCM ch.2 prioritises patients at increased risk of adverse outcomes.</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h2>Quality of the evidence</h2>
+  <ul class="notes">
+    <li><b>Strong:</b> airborne organisms spread across shared airspace; masking, separating and rapid testing help.</li>
+    <li><b>Weak:</b> that single rooms themselves reduce transmission (low or very low certainty for every organism; no randomised trials; mostly bundled outbreak measures). Isolation has real harms: anxiety, depression, less clinician contact, possibly more adverse events.</li>
+    <li><b>Expert opinion only:</b> every numeric threshold and the order within priorities.</li>
+    <li>The reviews' epidemiology figures disagree in places (e.g. TB notifications) and two cite non-authoritative web sources (e.g. a vendor blog, Substack), so no incidence figures are used on this sheet.</li>
+  </ul>
+
+  <h2>Sources reviewed</h2>
+  <p>NHS England NIPCM home page (v3, updated 28 July 2026) · Chapter 1 SICPs, §1.1 patient placement · Chapter 2 TBPs, §2.1–2.5 · Appendix 11: optimal patient placement and RPE, v1.1 (March 2026) · NHS England HCAI compendium (v22, July 2026) · NHS England National IPC Isolation Prioritisation Tool (v1.0, Oct 2024) · Prioritising Scarce Side Rooms for Suspected or Confirmed Infection in the UK ED: Evidence Review (Sept 2026) · Prioritising Single-Room Isolation: A Rapid Literature Review with GRADE-style Certainty Assessment (30 Sept 2026) · Evidence-Based Prioritisation of Single-Room Isolation in UK EDs (undated). The three reviews are not official guidance.</p>
+  <p><b>Not a substitute for clinical judgement, Trust IPC policy, or advice from IPC, microbiology or the UKHSA health protection team.</b></p>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <p>Draft v5 · Oct 2026 · For IPC review · Not yet Trust-approved · Clinical judgement and IPC advice override this tool.</p>
+  <p>A cognitive aid from <a href="https://emevidence.org" target="_blank" rel="noopener">emevidence.org</a>. No patient data is entered or stored.</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
