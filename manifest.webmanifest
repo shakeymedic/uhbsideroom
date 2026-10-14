@@ -1,0 +1,37 @@
+{
+  "id": "./",
+  "name": "ED Side-Room Prioritisation (UHB)",
+  "short_name": "Side Rooms",
+  "description": "Preliminary draft aide-memoire for prioritising ED side rooms when rooms run out. UHB emergency departments. Draft v5, Oct 2026, for IPC review, not yet Trust-approved.",
+  "lang": "en-GB",
+  "dir": "ltr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#005eb8",
+  "categories": [
+    "medical",
+    "education"
+  ],
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
