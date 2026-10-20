@@ -11,10 +11,11 @@ The wording is transcribed from the draft aide-memoire PDF. No clinical content 
 - `index.html`: all content
 - `styles.css`: layout, colours, dark mode, print
 - `app.js`: tabs and the risk-matrix lookup (no data leaves the page, nothing is stored)
+- `side-room-prioritisation-draft-v5.pdf`: the A4 print version of the aide-memoire, linked from the page header and from the emevidence.org card
 - `netlify.toml`: security headers; `frame-ancestors` allows emevidence.org to show it in its viewer
 
 ## Updating
 
-When a new version of the aide-memoire is approved, update the text in `index.html` and the version line in the banner and footer.
+When a new version of the aide-memoire is approved, update the text in `index.html` the version line in the banner and footer, and replace the PDF (renaming it changes the link, so update the `href` in `index.html` and the `download` URL in emevidence.org's `tools.js` too).
 
 Live at https://uhbsideroom.netlify.app (Netlify project `uhbsideroom`). Until the Netlify project is linked to this repo, changes here need deploying by hand. Listed on [emevidence.org](https://emevidence.org).
